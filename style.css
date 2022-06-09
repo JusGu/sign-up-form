@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+html {
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(231, 231, 231);
+
+}
+.wrapper {
+    display:flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow:hidden;
+}
+.background {
+    width: 30vw;
+    flex-shrink: 0;
+    background: url(./assets/background.png);
+    background-size: 500px;
+    display: flex;
+    position: relative;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.40);
+    width: 100%;
+}
+
+.title{
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+}
+.logo-wrapper img {
+    max-width: min(150px, 20vw);
+    margin: 1vw;
+    mix-blend-mode: screen;
+    filter: invert();
+}
+
+.sign-up-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 70vw;
+}
+.sign-up-form {
+    flex-shrink: 0;
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    width: max(50vw, 200px);
+    font-size: 20px;
+    flex-shrink: 0;
+    padding-left: 3vw;
+    font-weight: bold;
+}
+.form{
+    background-color: whitesmoke;
+    width: 70vw;
+    padding: 3vw;
+}
+form {
+    width: 45vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+form input {
+    border-radius: 0.25rem;
+    border: 1px #aeb0b5 solid;
+}
+.error{
+    border: 1px red solid !important;
+}
+
+form input:focus {
+    outline-color:#7d93cd;
+}
+form div {
+    margin-bottom: 2vh;
+}
+
+.footer {
+    padding-left: 3vw;
+    padding-top: 1vh;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  button {
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border: none;
+    background: #1d71b2;
+    color: whitesmoke;
+    margin-top: 1rem;
+    text-align: center;
+    transition: all .03s ease;
+  }
+
+  button:hover {
+    background: #2e8dd6;
+  }
+
+  #error{
+      position: absolute;
+      font-size: 10px;
+      color:red;
+  }
