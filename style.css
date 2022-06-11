@@ -19,7 +19,7 @@ body{
     width: 30vw;
     flex-shrink: 0;
     background: url(./assets/background.png);
-    background-size: 500px;
+    background-size: max(80vh, 40vw);
     display: flex;
     position: relative;
 }
