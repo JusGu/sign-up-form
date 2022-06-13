@@ -1,4 +1,4 @@
-# Calculator
+# Sign Up Form
 A mock/template sign-up form. Returns as error if passwords are not the same.
 
 ![Screenshot](https://i.imgur.com/Mnb4PDi.png)
